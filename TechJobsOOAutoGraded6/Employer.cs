@@ -1,4 +1,5 @@
 ﻿using System;
+//this assignment goes thru chapter 8
 namespace TechJobsOOAutoGraded6
 {
 	public class Employer
