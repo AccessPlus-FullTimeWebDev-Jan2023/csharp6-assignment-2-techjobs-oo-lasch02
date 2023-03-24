@@ -19,7 +19,6 @@ namespace TechJobsOOAutoGraded6
             Value = value; 
         }
 
-
         public override bool Equals(object obj)
         {
             return obj is Location location &&
