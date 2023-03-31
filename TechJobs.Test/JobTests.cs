@@ -1,4 +1,8 @@
 ﻿
+using System.Data;
+using System.Diagnostics.Metrics;
+using System.Xml.Linq;
+
 namespace TechJobs.Tests
 {
 	[TestClass]
@@ -48,8 +52,27 @@ namespace TechJobs.Tests
         public void TestToStringStartsAndEndsWithNewLine()
         {
             Assert.IsTrue(job3.ToString().StartsWith(Environment.NewLine));
+            Assert.IsTrue(job3.ToString().EndsWith(Environment.NewLine));
         }
 
+        [TestMethod]
+        public void TestToStringContainsCorrectLabelsAndData()
+        {
+            Assert.AreEqual(Environment.NewLine + "ID: " + job3.Id +
+                Environment.NewLine + "Name: Product tester" + 
+                Environment.NewLine + "Employer: ACME" + 
+                Environment.NewLine + "Location: Desert" + 
+                Environment.NewLine + "Position Type: Quality control" + 
+                Environment.NewLine + "Core Competency: Persistence" + 
+                Environment.NewLine, job3.ToString());
+        }
+
+        //If a field is empty, the method should add, “Data not available” after the label.
+        [TestMethod]
+        public void TestToStringHandlesEmptyField()
+        {
+
+        }
 
     }
 
