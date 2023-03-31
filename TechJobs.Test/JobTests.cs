@@ -18,14 +18,7 @@ namespace TechJobs.Tests
         //}
 
 
-//Each Job object should contain a unique ID number, and these should also be sequential integers.  In JobTests, define a test called TestSettingJobId.
-//  Using job1 and job2, compare two empty constructor Job objects. Use Assert.AreEqual, Assert.IsTrue, or Assert.IsFalse to test that the ID values for the two objects are NOT the same and differ by 1.
-//How could you compare Id numbers?
-//How could you test the incrementing amount?
-//Run the test to verify that your Job() constructor correctly assigns ID numbers.
-//If the test doesn’t pass, what should be your first thought?//
-//“I need to fix the unit test.”
-//“I need to fix my Job() constructor code.”
+
 
         [TestMethod]
         public void TestSettingJobId()
@@ -49,6 +42,12 @@ namespace TechJobs.Tests
         public void TestJobsForEquality()
         {
             Assert.AreEqual(job1.Id == job2.Id, false);
+        }
+
+        [TestMethod]
+        public void TestToStringStartsAndEndsWithNewLine()
+        {
+            Assert.IsTrue(job3.ToString().StartsWith(Environment.NewLine));
         }
 
 
