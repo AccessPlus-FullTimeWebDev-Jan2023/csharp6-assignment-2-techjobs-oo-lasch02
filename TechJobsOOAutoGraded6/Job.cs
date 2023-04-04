@@ -57,7 +57,7 @@ namespace TechJobsOOAutoGraded6
             //rewrite each line separately, each line has data not available and make sure that it returns the value not just "data not available". All of these properties still have setters.
             if (Name == "" || EmployerName.Value == "" || EmployerLocation.Value == "" || JobType.Value == "" || JobCoreCompetency.Value == "")
             {
-                return "Data not available";
+                return "Data not available"; 
             }
             //I only need to return this one
             return Environment.NewLine + "ID: " + Id +
