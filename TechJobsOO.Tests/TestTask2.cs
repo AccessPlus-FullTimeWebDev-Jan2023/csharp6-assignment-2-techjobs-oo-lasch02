@@ -52,7 +52,7 @@ namespace TechJobsOO.Tests
         }
 
 
-        [TestMethod] //3
+        [TestMethod] //3 - this one will fail after task 6.  Why?
         public void Test_Second_Location_Constructor_Initializes_Id()
         {
             //setup

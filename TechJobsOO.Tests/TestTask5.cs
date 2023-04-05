@@ -47,7 +47,7 @@ namespace TechJobsOO.Tests
             //id numbers may get a little wonky
 
             //setup
-            string text = System.IO.File.ReadAllText("C:\\Users\\lasch\\Desktop\\csharp\\New folder\\TechJobsOO.Tests\\StartsAndEndsWithNewLine.txt").ToString();
+            string text = System.IO.File.ReadAllText("C:\\Users\\Gellman Team\\Desktop\\Repos-Lectures-Studios\\C-sharp\\assignments-c#\\csharp-assignment2-techjobs\\TechJobsOO.Tests\\StartsAndEndsWithNewLine.txt").ToString();
             var stringWriter = new StringWriter();
             Console.SetOut(stringWriter);
             var job = new RunTechJobs();
@@ -137,7 +137,7 @@ namespace TechJobsOO.Tests
             //comparing output to a text file.
             //id numbers may get a little wonky
 
-            string text = System.IO.File.ReadAllText("C:\\Users\\lasch\\Desktop\\csharp\\New folder\\TechJobsOO.Tests\\EmptyFieldTest.txt").ToString();
+            string text = System.IO.File.ReadAllText("C:\\Users\\Gellman Team\\Desktop\\Repos-Lectures-Studios\\C-sharp\\assignments-c#\\csharp-assignment2-techjobs\\TechJobsOO.Tests\\EmptyFieldTest.txt").ToString();
             var stringWriter = new StringWriter();
             Console.SetOut(stringWriter);
             var job = new RunTechJobs();

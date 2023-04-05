@@ -68,10 +68,31 @@ namespace TechJobs.Tests
         }
 
         //If a field is empty, the method should add, “Data not available” after the label.
+        //(expected, actual)
         [TestMethod]
         public void TestToStringHandlesEmptyField()
         {
-            Assert.AreEqual("Data not available", job1.ToString());
+            //Assert.AreEqual("Data not available", job1.ToString());
+            //Assert.AreEqual(Environment.NewLine + "ID: " + job3.Id +
+            //    Environment.NewLine + "Name: Data not available" +
+            //    Environment.NewLine + "Employer: Data not available" +
+            //    Environment.NewLine + "Location: Data not available" +
+            //    Environment.NewLine + "Position Type: Data not available" +
+            //    Environment.NewLine + "Core Competency: Data not available" +
+            //    Environment.NewLine, job1.ToString());
+
+            job3.Name = "";
+
+            Assert.AreEqual(Environment.NewLine + "ID: " + job3.Id +
+            Environment.NewLine + "Name: Data not available" +
+            Environment.NewLine + "Employer: ACME" +
+            Environment.NewLine + "Location: Desert" +
+            Environment.NewLine + "Position Type: Quality control" +
+            Environment.NewLine + "Core Competency: Persistence" +
+            Environment.NewLine, job3.ToString());
+
+            //            Assert.AreEqual(Environment.NewLine + "Core Competency:  " +
+            //Environment.NewLine, "Core Competency: Data not available");
         }
 
     }
