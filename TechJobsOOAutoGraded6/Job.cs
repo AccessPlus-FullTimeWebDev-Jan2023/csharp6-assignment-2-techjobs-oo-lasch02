@@ -55,20 +55,37 @@ namespace TechJobsOOAutoGraded6
             //    Environment.NewLine;
 
             //rewrite each line separately, each line has data not available and make sure that it returns the value not just "data not available". All of these properties still have setters.
-            if (Name == "" || EmployerName.Value == "" || EmployerLocation.Value == "" || JobType.Value == "" || JobCoreCompetency.Value == "")
+            //if (Name == "" || EmployerName.Value == "" || EmployerLocation.Value == "" || JobType.Value == "" || JobCoreCompetency.Value == "")
+            if (Name == "")
             {
-                return "Data not available"; 
+                Name = "Data notavailable";
+            }
+            else if (EmployerName.Value == "")
+            {
+                EmployerName.Value = "Data notavailable";
+            }
+            else if (EmployerLocation.Value == "")
+            {
+                EmployerLocation.Value = "Data notavailable";
+            }
+            else if (JobType.Value == "")
+            {
+                JobType.Value = "Data notavailable";
+            }
+            else if (JobCoreCompetency.Value == "")
+            {
+                JobCoreCompetency.Value = "Data not available";
             }
             //I only need to return this one
             return Environment.NewLine + "ID: " + Id +
-                Environment.NewLine + "Name: " + Name +
-                Environment.NewLine + "Employer: " + EmployerName +
-                Environment.NewLine + "Location: " + EmployerLocation +
-                Environment.NewLine + "Position Type: " + JobType +
-                Environment.NewLine + "Core Competency: " + JobCoreCompetency +
-                Environment.NewLine;
-
+            Environment.NewLine + "Name: " + Name +
+            Environment.NewLine + "Employer: " + EmployerName +
+            Environment.NewLine + "Location: " + EmployerLocation +
+            Environment.NewLine + "Position Type: " + JobType +
+            Environment.NewLine + "Core Competency: " + JobCoreCompetency +
+            Environment.NewLine;
         }
+
     }
 }
 
