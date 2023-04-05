@@ -58,15 +58,15 @@ namespace TechJobsOOAutoGraded6
             //if (Name == "" || EmployerName.Value == "" || EmployerLocation.Value == "" || JobType.Value == "" || JobCoreCompetency.Value == "")
             if (Name == "")
             {
-                Name = "Data notavailable";
+                Name = "Data not available";
             }
             else if (EmployerName.Value == "")
             {
-                EmployerName.Value = "Data notavailable";
+                EmployerName.Value = "Data not available";
             }
             else if (EmployerLocation.Value == "")
             {
-                EmployerLocation.Value = "Data notavailable";
+                EmployerLocation.Value = "Data not available";
             }
             else if (JobType.Value == "")
             {
