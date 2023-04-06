@@ -46,14 +46,6 @@ namespace TechJobsOOAutoGraded6
         //Until you create this method, you will not be able to print a job to the console.
         public override string ToString()
         {
-            //return Environment.NewLine + "ID: " + Id +
-            //    Environment.NewLine + "Name: " + Name + 
-            //    Environment.NewLine + "Employer: " + EmployerName + 
-            //    Environment.NewLine + "Location: " + EmployerLocation + 
-            //    Environment.NewLine + "Position Type: " + JobType + 
-            //    Environment.NewLine + "Core Competency: " + JobCoreCompetency + 
-            //    Environment.NewLine;
-
             //rewrite each line separately, each line has data not available and make sure that it returns the value not just "data not available". All of these properties still have setters.
             //if (Name == "" || EmployerName.Value == "" || EmployerLocation.Value == "" || JobType.Value == "" || JobCoreCompetency.Value == "")
             if (Name == "")

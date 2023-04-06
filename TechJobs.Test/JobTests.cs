@@ -9,7 +9,7 @@ namespace TechJobs.Tests
 	public class JobTests
 	{
         //Testing objects
-        //[TestInitialize]
+        //[TestInitialize]  //in order to do this, all the job objects would need to be declared above the method, then initialized inside the method. 
         //public void InitializeObjects()
         //{
             Job job1 = new Job();
@@ -29,7 +29,7 @@ namespace TechJobs.Tests
         {
             //Assert.AreNotEqual(job1.Id, job2.Id);
             Assert.IsFalse(job1.Id == job2.Id);
-            //Assert.IsTrue(job1.Id == 1 && job2.Id == 2);
+            Assert.IsTrue(job2.Id - job1.Id == 1);
         }
 
         [TestMethod]
@@ -45,7 +45,7 @@ namespace TechJobs.Tests
         [TestMethod]
         public void TestJobsForEquality()
         {
-            Assert.AreEqual(job1.Id == job2.Id, false);
+            Assert.AreEqual(job1.Equals(job2), false);
         }
 
         [TestMethod]
