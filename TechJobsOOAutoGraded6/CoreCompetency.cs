@@ -1,40 +1,41 @@
 ﻿using System;
 namespace TechJobsOOAutoGraded6
 {
-	public class CoreCompetency
-	{
-        private int id;
-        private static int nextId = 1;
-        private string value;
+	public class CoreCompetency : JobField
+    {
+        //public int Id { get; }
+        //private static int nextId = 1;
+        //public string Value { get; set; }
 
         // TODO: Task 2: Change the fields to auto-implemented properties.
 
-        public CoreCompetency()
+        public CoreCompetency(string value) : base(value)
         {
-            id = nextId;
-            nextId++;
+            //    Id = nextId;
+            //    nextId++;
         }
 
-        public CoreCompetency(string v) : this()
-        {
-            value = v;
-        }
+        //public CoreCompetency(string v) : this()
+        //{
+        //    Value = v;
+        //}
 
-        public override bool Equals(object obj)
-        {
-            return obj is CoreCompetency competency &&
-                   id == competency.id;
-        }
+        //public override bool Equals(object obj)
+        //{
+        //    return obj is CoreCompetency competency &&
+        //           Id == competency.Id;
+        //}
 
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(id);
-        }
+        //public override int GetHashCode()
+        //{
+        //    return HashCode.Combine(Id);
+        //}
 
-        public override string ToString()
-        {
-            return value;
-        }
+        //take the code from inside the brackets...don't include the brackets
+        //public override string ToString()
+        //{
+        //    return Value;
+        //}
     }
 }
 
